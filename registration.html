@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/018afdbea4.js" crossorigin="anonymous"></script>
+    <title>brand shop</title>
+</head>
+
+<body>
+    <header class="header center">
+		<section class="left">
+			<a href="index.html"><img src="img/logo.svg" alt="TheBrand"></a>
+			<i class="fas fa-search"></i>
+		</section>
+		<section class="right">
+			<button class="menu-btn">
+				<img src="img/icon/bars_menu.svg" alt="menu">
+			</button>
+			<nav class="menu-overlay">
+				<button class="menu-btn-close"><img src="img/icon/menu_close_btn.svg" alt="close"></button>
+
+				<script src="js/menu_close_open.js"></script>
+
+				<div class="nav">
+					<h2 class="menu-title">MENU</h2>
+					<ul class="menu-list">
+						<li class="menu-list-partition">MAN
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Bags</a></li>
+								<li><a class="link-item" href="#">Denim</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+							</ul>
+						</li>
+						<li class="menu-list-partition">WOMAN
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Jackets & Coats</a></li>
+								<li><a class="link-item" href="#">Polos</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+								<li><a class="link-item" href="#">Shirts</a></li>
+							</ul>
+						</li>
+						<li class="menu-list-partition">KIDS
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Jackets & Coats</a></li>
+								<li><a class="link-item" href="#">Polos</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+								<li><a class="link-item" href="#">Shirts</a></li>
+								<li><a class="link-item" href="#">Bags</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<a href="registration.html"><img src="img/icon/user.svg" alt="user"></a>
+			<a href="cart.html"><img src="img/icon/shopping-cart.svg" alt="cart"></a>
+			
+		</section>
+	</header>
+
+    
+    <main>
+        <nav class="breadcrumb center">
+
+            <h2 class="page-header">REGISTRATION</h2>
+    
+            <ul class="breadcrumb-list">
+                <li> <a class="breadcrumb-item" href="index.html">HOME /</a></li>
+                
+                <li><a class="breadcrumb-item-active" href="#">REGISTRATION</a></li>
+            </ul>
+        </nav>
+
+       <section class="registration center">
+        <form class="registration-form" action="#">
+            <fieldset class="registration-name">
+                <legend>Your Name</legend>
+                <input class="registration-styleform" type="text" placeholder="First Name">
+                <input class="registration-styleform" type="text" placeholder="Last Name">
+            </fieldset>
+            <fieldset class="registration-gender">
+                 <input type="radio" name="gender" value="male"> Male
+                 <input type="radio" name="gender" value="female"> Female
+            </fieldset>
+            <fieldset class="registration-logpass">
+             <legend>Login details</legend>
+             <input class="registration-styleform" type="email" placeholder="Email">
+             <input class="registration-styleform" type="password" placeholder="Password">
+         </fieldset>
+             <p class="registration-logpass-desc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+             <button class="registration-btn">
+                 JOIN NOW
+                 <img src="img/elements/reg_arrow.svg" alt=" ">
+             </button>
+        </form>
+ 
+        <section class="loyaltyprog">
+            <h2 class="loyaltyprog-title">LOYALTY HAS ITS PERKS</h2>
+            <p class="loyaltyprog-desc">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="loyaltyprog-list">
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
+        </section>
+       </section>
+        
+    </main>
+
+    <section class="subscribe-reviews center">
+        <article class="reviews">
+            <img src="img/sub_photo.png" alt="">
+            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="italic">a pulvinar purus condimentum“</span></p>
+
+        </article>
+
+        <article class="sub-form">
+            <p>SUBSCRIBE</p>
+            <p>FOR OUR NEWLETTER AND PROMOTION</p>
+            <form class="subscribe" action="#">
+                <input class="subscribe-mail" type="email" placeholder="Enter Your Email">
+                <input class="subscribe-sub" type="submit" value="Subscribe">
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer center">
+		<p class="copyright">&#169; 2021 Brand All Rights Reserved.</p>
+		
+		<section class="social">
+			<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-pinterest-p"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+		</section>
+		
+	</footer>
+
+</body></html>

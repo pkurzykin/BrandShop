@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/018afdbea4.js" crossorigin="anonymous"></script>
+    <title>brand shop</title>
+</head>
+
+<body>
+    <header class="header center">
+		<section class="left">
+			<a href="index.html"><img src="img/logo.svg" alt="TheBrand"></a>
+			<i class="fas fa-search"></i>
+		</section>
+		<section class="right">
+			<button class="menu-btn">
+				<img src="img/icon/bars_menu.svg" alt="menu">
+			</button>
+			<nav class="menu-overlay">
+				<button class="menu-btn-close"><img src="img/icon/menu_close_btn.svg" alt="close"></button>
+
+				<script src="js/menu_close_open.js"></script>
+
+				<div class="nav">
+					<h2 class="menu-title">MENU</h2>
+					<ul class="menu-list">
+						<li class="menu-list-partition">MAN
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Bags</a></li>
+								<li><a class="link-item" href="#">Denim</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+							</ul>
+						</li>
+						<li class="menu-list-partition">WOMAN
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Jackets & Coats</a></li>
+								<li><a class="link-item" href="#">Polos</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+								<li><a class="link-item" href="#">Shirts</a></li>
+							</ul>
+						</li>
+						<li class="menu-list-partition">KIDS
+							<ul class="menu-list-partition-item">
+								<li><a class="link-item" href="#">Accessories</a></li>
+								<li><a class="link-item" href="#">Jackets & Coats</a></li>
+								<li><a class="link-item" href="#">Polos</a></li>
+								<li><a class="link-item" href="#">T-Shirts</a></li>
+								<li><a class="link-item" href="#">Shirts</a></li>
+								<li><a class="link-item" href="#">Bags</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<a href="registration.html"><img src="img/icon/user.svg" alt="user"></a>
+			<a href="cart.html"><img src="img/icon/shopping-cart.svg" alt="cart"></a>
+			
+		</section>
+	</header>
+
+    <nav class="breadcrumb center">
+
+        <h2 class="page-header">SHOPPING CART</h2>
+
+        <ul class="breadcrumb-list">
+            <li> <a class="breadcrumb-item" href="index.html">HOME /</a></li>
+            
+            <li><a class="breadcrumb-item-active" href="#">SHOPPING CART</a></li>
+        </ul>
+    </nav>
+
+    <main class="cart center">
+       
+
+        <section class="cart-content">
+            <section class="product-ticket center">
+                <img class="product-ticket-img" src="img/products/prod_3.jpg" alt="#">
+                <h3 class="produc-ticket-name">MANGO  PEOPLE <br> T-SHIRT</h3>
+                <ul class="product-ticket-feature">
+                    <li>Price: $300</li>
+                    <li>Color: Red</li>
+                    <li>Size: Xl</li>
+                    <li>Quantity:	2</li>
+                </ul>
+                <input class="product-ticket-cross" type="image" src="img/icon/cross.svg" alt="delete">
+            </section>
+            <section class="product-ticket center">
+                <img class="product-ticket-img" src="img/products/prod_2_1.jpg" alt="#">
+                <h3 class="produc-ticket-name">MANGO  PEOPLE <br> T-SHIRT</h3>
+                <ul class="product-ticket-feature">
+                    <li>Price: $300</li>
+                    <li>Color: Red</li>
+                    <li>Size: Xl</li>
+                    <li>Quantity:	2</li>
+                </ul>
+                <input class="product-ticket-cross" type="image" src="img/icon/cross.svg" alt="delete">
+            </section>
+            <section class="clrcontshop">
+                <button class="clrcontshop-btn">CLEAR SHOPPING CART</button>
+                <button class="clrcontshop-btn">CONTINUE SHOPPING</button>
+            </section>
+            
+           </section>
+
+           <div class="shipcheck">
+            <form class="shipping-adress center" action="#">
+                <p class="shipping-adress-title">SHIPPING ADRESS</p>
+            <input class="shipping-adress-items" list="country" placeholder="Country">
+            <datalist id="country">
+                <option value="country_1"></option>
+                <option value="country_2"></option>
+                <option value="country_3"></option>
+            </datalist>
+            <input class="shipping-adress-items" list="state" placeholder="State">
+            <datalist id="state">
+                <option value="state_1"></option>
+                <option value="state_2"></option>
+                <option value="state_3"></option>
+            </datalist>
+           <input class="shipping-adress-items" type="text" placeholder="Postcode / Zip">
+           <button class="getquote-btn">GET A QUOTE</button>
+                </form>
+            
+           <section class="check-box center">
+            <section class="check">
+                <p class="check-subttl">SUB TOTAL         $900</p>
+                <p class="check-grandttl">GRAND TOTAL      $900</p>
+                <img src="img/elements/line_check.svg" alt=" ">
+                <button class="check-btn">PROCEED TO CHECKOUT</button>
+            </section>
+    
+            </section>
+           </div>
+
+      
+    </main>
+   
+
+    <section class="subscribe-reviews center">
+        <article class="reviews">
+            <img src="img/sub_photo.png" alt="">
+            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="italic">a pulvinar purus condimentum“</span></p>
+
+        </article>
+
+        <article class="sub-form">
+            <p>SUBSCRIBE</p>
+            <p>FOR OUR NEWLETTER AND PROMOTION</p>
+            <form class="subscribe" action="#">
+                <input class="subscribe-mail" type="email" placeholder="Enter Your Email">
+                <input class="subscribe-sub" type="submit" value="Subscribe">
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer center">
+		<p class="copyright">&#169; 2021 Brand All Rights Reserved.</p>
+		
+		<section class="social">
+			<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-pinterest-p"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+		<a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+		</section>
+		
+	</footer>
+
+</body></html>
