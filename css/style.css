@@ -70,8 +70,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   background-image: url(../img/title_brand.png);
   background-repeat: no-repeat;
+  background-position: calc(50% - 1140px / 3);
 }
 
 .tagline {
