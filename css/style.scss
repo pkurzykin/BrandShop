@@ -947,7 +947,7 @@ color: #C4C4C4;
 .check {
 	width: 360px;
 	height: 214px;
-	background-color: #F5F3F3;
+	background-color: #f3c9c9;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1353,6 +1353,27 @@ color: #C4C4C4;
 		position: relative;
 		margin: 0 auto;
 	}
+	.cart {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.check-box {
+		display: flex;
+    align-items: center;
+	padding-left: 15px;
+	}
+	.shipcheck {
+		margin-top: 64px;
+	}
+	.product-ticket {
+		width: 734px;
+	}
+	.clrcontshop {
+		width: 508px;
+	}
+	.cart-content {
+		align-items: center;
+	}
 	
 }
 
@@ -1417,6 +1438,53 @@ color: #C4C4C4;
 	}
 	.breadcrumb-list {
 		padding: 0;
+	}
+	.product-ticket {
+		width: 358px;
+		height: 188px;
+		padding-left: 9px;
+		padding-right: 8px;
+	}
+	.product-ticket-img {
+		width: 144px;
+		height: 188px;
+	}
+	.produc-ticket-name {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.product-ticket-feature {
+		font-size: 14px;
+		line-height: 17px;
+		padding-top: 15px;
+	}
+	.clrcontshop {
+		width: 359px;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-top: 30px;
+	}
+	.clrcontshop-btn {
+		width: 175px;
+		height: 33px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.cart-content {
+		margin-top: 39px;
+	}
+	.shipcheck {
+		margin-top: 48px;
+	}
+	.check {
+		margin-top: 48px;
+	}
+	.check-box {
+		padding-bottom: 96px;
+	}
+	.product-ticket-cross {
+		padding-left: 35px;
+    	padding-top: 25px;
 	}
 
 }
