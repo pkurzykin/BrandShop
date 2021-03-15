@@ -610,6 +610,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 100;
 }
 
 .menu-overlay-open {
@@ -855,7 +856,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360px;
+  width: 296px;
   height: 17px;
   list-style-type: none;
   -webkit-box-pack: justify;
