@@ -767,6 +767,11 @@ a {
   background-image: url(../img/icon/burger_filter.svg);
   background-repeat: no-repeat;
   background-position: right;
+  display: block;
+}
+
+.filter-summary::marker {
+  display: none;
 }
 
 .filter-summary:hover {
@@ -831,10 +836,6 @@ a {
   color: #3f3e3e;
 }
 
-::-webkit-details-marker {
-  display: none;
-}
-
 .filter-content {
   position: absolute;
   background-color: #fff;
@@ -874,6 +875,11 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  display: block;
+}
+
+.sort-summary::marker {
+  display: none;
 }
 
 .sort-summary:focus {

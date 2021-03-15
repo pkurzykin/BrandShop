@@ -660,6 +660,7 @@ color: #F16D7F;
 	position: relative;
 	
 	z-index: 1;
+	
 		&-summary {
 			width: 70px;
 			height: 17px;
@@ -672,6 +673,8 @@ color: #F16D7F;
 			background-image: url(../img/icon/burger_filter.svg);
 			background-repeat: no-repeat;
 			background-position: right;
+			display: block;
+			&::marker {display: none;}
 				&:hover {
 					cursor: pointer;
 					color: #EF5B70;
@@ -725,7 +728,7 @@ color: #F16D7F;
 				}
 		}
 }
-::-webkit-details-marker {display: none;}
+
 
 .filter-content {
 	position: absolute;
@@ -762,6 +765,8 @@ color: #F16D7F;
 			font-size: 14px;
 			line-height: 17px;
 			color: #6F6E6E;
+			display: block;
+			&::marker {display: none;}
 			&:focus {
 				outline: none;
 			}
