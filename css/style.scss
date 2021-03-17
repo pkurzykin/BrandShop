@@ -1487,5 +1487,27 @@ color: #C4C4C4;
 		padding-left: 35px;
     	padding-top: 25px;
 	}
+	.product-items {
+		padding-left: 8px;
+    	padding-right: 8px;
+	}
+	.filter-summary {
+		background-position: left;
+		font-size: 0;
+		background-image: url(../img/icon/burger_filter_phone.svg);
+		height: 25px;
+			&:hover {
+				background-position: left;
+				background-image: url(../img/icon/burger_filter_phone.svg);
+			}
+			&:active {
+				background-image: url(../img/icon/burger_filter_phone.svg);
+				background-position: left;
+			}
+	}
+	.filter[open] > summary {
+			background-position: left;
+				background-image: url(../img/icon/burger_filter_phone.svg);
+	}
 
 }
