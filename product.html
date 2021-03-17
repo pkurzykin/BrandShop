@@ -78,9 +78,15 @@
         </nav>
 
         <section class="slider">
-            <button class="slider-btn fas fa-chevron-left"></button>
-            <img src="img/slider/slider_img_1.jpg" alt="foto">
-            <button class="slider-btn fas fa-chevron-right"></button>
+            <button class="slider-btn-l fas fa-chevron-left"></button>
+
+            <picture>
+                <source media="(max-width: 800px)" srcset="img/slider/slider_img_1_tablet.jpg">
+                <source media="(max-width: 400px)" srcset="img/slider/slider_img_1_phone.jpg">   
+                <img src="img/slider/slider_img_1.jpg" alt="foto">
+            </picture>
+            
+            <button class="slider-btn-r fas fa-chevron-right"></button>
         </section>
 
         <section class="productdescription">
@@ -89,7 +95,7 @@
             <h2 class="productdescription-title">MOSCHINO CHEAP AND CHIC</h2>
             <p class="productdescription-desc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
             <p class="productdescription-price">$561</p>
-            <img src="img/elements/product_line_gray.svg" alt=" ">
+            <!-- <img src="img/elements/product_line_gray.svg" alt=" "> -->
 
             <section class="sort sortproduct">
                 <details>
