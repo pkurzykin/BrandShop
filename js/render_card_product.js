@@ -60,10 +60,9 @@ const renderProduct = (title, desc, price) => {
 };
 
 const renderPage = (list) => {
-  const productsList = list.map((item) =>
-    renderProduct(item.title, item.desc, item.price)
-  );
-  console.log(productsList);
+  const productsList = list
+    .map((item) => renderProduct(item.title, item.desc, item.price))
+    .join("");
   document.querySelector(".product-items").innerHTML = productsList;
 };
 
