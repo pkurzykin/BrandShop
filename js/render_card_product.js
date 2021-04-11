@@ -43,25 +43,25 @@ const products = [
   },
 ];
 
-const renderProduct = (title, desc, price, id) => {
+const renderProduct = (productProperty) => {
   return `<div class="product">
-            <img src="img/products/prod_${id}.jpg" alt="image">
+            <img src="img/products/prod_${productProperty.id}.jpg" alt="image">
             <div class="overlay">
                 <button class="addtocart-overlay-btn"> 
                     <img src="img/icon/shopping-cart-btn.svg" alt=" "> Add to cart
                 </button>
             </div>
             <a href="product.html">
-                <p class="product-title">${title}</p>
-                <p class="product-desc">${desc}</p>
-                <p class="product-price">&#36;${price}</p>
+                <p class="product-title">${productProperty.title}</p>
+                <p class="product-desc">${productProperty.desc}</p>
+                <p class="product-price">&#36;${productProperty.price}</p>
             </a>
             </div>`;
 };
 
 const renderPage = (list) => {
   const productsList = list
-    .map((item) => renderProduct(item.title, item.desc, item.price, item.id))
+    .map((productProperty) => renderProduct(productProperty))
     .join("");
   document.querySelector(".product-items").innerHTML = productsList;
 };
