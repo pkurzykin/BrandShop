@@ -7,7 +7,7 @@ body {
 }
 
 .fa-search {
-  color: #E8E8E8;
+  color: #e8e8e8;
   font-size: 26px;
 }
 
@@ -63,7 +63,7 @@ a {
 
 .promo {
   height: 764px;
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +78,7 @@ a {
 
 .tagline {
   margin: 0;
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 55%;
@@ -88,7 +88,7 @@ a {
 .tagline-pink {
   font-family: Lato;
   font-style: normal;
-  color: #F16D7F;
+  color: #f16d7f;
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -157,7 +157,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .offer-title-pink {
@@ -167,7 +167,7 @@ a {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .offer > :nth-child(1) {
@@ -262,9 +262,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .product-title {
@@ -285,7 +284,7 @@ a {
   line-height: 17px;
   margin-left: 17px;
   margin-right: 28px;
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 
 .product-price {
@@ -295,7 +294,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   margin-left: 17px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .fetured-title {
@@ -318,7 +317,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #9F9F9F;
+  color: #9f9f9f;
   text-align: center;
 }
 
@@ -327,8 +326,8 @@ a {
   height: 48px;
   margin: 0 calc(50% - 1140px / 10);
   margin-top: 48px;
-  outline: 1px solid #FF6A6A;
-  color: #F26376;
+  outline: 1px solid #ff6a6a;
+  color: #f26376;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -340,8 +339,8 @@ a {
 
 .browse-all:hover {
   cursor: pointer;
-  background: #F16D7F;
-  color: #FFFFFF;
+  background: #f16d7f;
+  color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -385,7 +384,7 @@ a {
   font-weight: normal;
   font-size: 19.96px;
   line-height: 24px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center;
   margin: 0;
 }
@@ -396,7 +395,7 @@ a {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center;
   margin: 0;
 }
@@ -419,7 +418,7 @@ a {
 }
 
 .reviews {
-  width: 360px;
+  width: 50%;
   height: 225px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,8 +471,8 @@ a {
 .subscribe-sub {
   width: 100px;
   height: 49px;
-  background: #F16D7F;
-  border: 1px solid #F16D7F;
+  background: #f16d7f;
+  border: 1px solid #f16d7f;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   font-family: Lato;
@@ -486,15 +485,15 @@ a {
 
 .subscribe-sub:hover {
   cursor: pointer;
-  background: #E05C6E;
+  background: #e05c6e;
 }
 
 .subscribe-mail {
   width: 256px;
   height: 49px;
   border: none;
-  background: #E1E1E1;
-  border: 1px solid #F16D7F;
+  background: #e1e1e1;
+  border: 1px solid #f16d7f;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-right: none;
@@ -512,7 +511,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 557px;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -541,44 +540,41 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   display: inline-block;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   width: 32px;
   height: 32px;
   background-color: #ffffff;
-  padding: 0;
   border: none;
-  float: right;
-  margin-top: 24px;
-  margin-right: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .social-icon:hover {
   color: #ffffff;
-  background-color: #F16D7F;
-}
-
-.fa-twitter {
-  margin: 7px;
-}
-
-.fa-facebook-f {
-  margin-left: 11px;
-  margin-top: 7px;
-}
-
-.fa-instagram {
-  margin-top: 8px;
-  margin-left: 9px;
-}
-
-.fa-pinterest-p {
-  margin-top: 8px;
-  margin-left: 10px;
+  background-color: #f16d7f;
 }
 
 .menu-btn {
@@ -665,7 +661,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #F16D7F;
+  color: #f16d7f;
   padding-left: 0;
   margin-top: 20px;
 }
@@ -681,7 +677,7 @@ a {
 
 .link-item {
   text-decoration: none;
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .link-item:hover {
@@ -701,7 +697,7 @@ a {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .breadcrumb-list {
@@ -723,7 +719,7 @@ a {
           align-items: center;
   margin: 0;
   height: 148px;
-  background-color: #F8F3F4;
+  background-color: #f8f3f4;
 }
 
 .breadcrumb-item {
@@ -743,7 +739,7 @@ a {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .filter {
@@ -777,7 +773,7 @@ a {
 
 .filter-summary:hover {
   cursor: pointer;
-  color: #EF5B70;
+  color: #ef5b70;
   background-image: url(../img/icon/burger_filter_pink.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -794,8 +790,8 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #6F6E6E;
-  border-left: 5px solid #EF5B70;
+  color: #6f6e6e;
+  border-left: 5px solid #ef5b70;
   height: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,11 +805,11 @@ a {
 
 .filter-summary-subparagraph:hover {
   cursor: pointer;
-  color: #EF5B70;
+  color: #ef5b70;
 }
 
 .filter-summary-subparagraph:focus {
-  color: #EF5B70;
+  color: #ef5b70;
   outline: none;
 }
 
@@ -825,7 +821,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .filter-summary-subparagraph-list-item {
@@ -844,7 +840,7 @@ a {
 }
 
 .filter[open] > summary {
-  color: #EF5B70;
+  color: #ef5b70;
   background-image: url(../img/icon/burger_filter_pink.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -875,7 +871,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #6F6E6E;
+  color: #6f6e6e;
   display: block;
 }
 
@@ -909,7 +905,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .sort-btn {
@@ -940,7 +936,7 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 .page-link {
@@ -1063,7 +1059,7 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .getquote-btn {
@@ -1074,8 +1070,8 @@ a {
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
-  border: 1px solid #A4A4A4;
+  color: #4a4a4a;
+  border: 1px solid #a4a4a4;
   background: none;
 }
 
@@ -1110,13 +1106,13 @@ a {
 .check-btn {
   width: 273px;
   height: 50px;
-  background: #F16D7F;
+  background: #f16d7f;
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   margin-top: 17px;
 }
@@ -1127,7 +1123,7 @@ a {
   font-weight: normal;
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   width: 273px;
   height: 13px;
   display: -webkit-box;
@@ -1193,7 +1189,7 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   background: none;
 }
 
@@ -1208,7 +1204,7 @@ a {
 
 .slider {
   height: 777px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,7 +1262,7 @@ a {
 }
 
 .fa-chevron-left:hover {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .fa-chevron-right {
@@ -1275,7 +1271,7 @@ a {
 }
 
 .fa-chevron-right:hover {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .productdescription {
@@ -1306,7 +1302,7 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #F16D7F;
+  color: #f16d7f;
   margin: 0;
   margin-bottom: -30px;
 }
@@ -1317,7 +1313,7 @@ a {
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin: 0;
   margin-top: -30px;
 }
@@ -1329,7 +1325,7 @@ a {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 
 .productdescription-price {
@@ -1338,7 +1334,7 @@ a {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #EF5B70;
+  color: #ef5b70;
 }
 
 .productdescription-sort {
@@ -1361,9 +1357,9 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #F26376;
+  color: #f26376;
   background-color: #ffffff;
-  border-color: #FF6A6A;
+  border-color: #ff6a6a;
   border-style: solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1477,25 +1473,25 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
+  color: #b1b1b1;
   margin-top: -35px;
 }
 
 .registration-styleform {
   height: 45px;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   padding-left: 17px;
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration-btn {
   border: none;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   width: 167px;
   height: 50px;
   display: -webkit-box;
@@ -1512,7 +1508,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .registration-btn:hover {
@@ -1566,8 +1562,8 @@ a {
     height: 116px;
   }
   .product-items {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .advantages {
     margin-top: 65px;
@@ -1581,7 +1577,7 @@ a {
             justify-content: space-evenly;
   }
   .subscribe-reviews {
-    height: 614px;
+    height: 570px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1599,7 +1595,8 @@ a {
     font-size: 44px;
     line-height: 53px;
   }
-  .tagline-normal, .tagline-pink {
+  .tagline-normal,
+  .tagline-pink {
     font-size: 24px;
     line-height: 29px;
   }
@@ -1659,13 +1656,20 @@ a {
     height: 368px;
     background-image: url(../img/title_brand_tablet.png);
     background-repeat: no-repeat;
+    background-position: inherit;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 570px) {
+  .reviews {
+    width: 100%;
+  }
+  .sub-form {
+    width: 100%;
+  }
   .promo {
     background: none;
-    background-color: #F1E4E6;
+    background-color: #f1e4e6;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1676,7 +1680,8 @@ a {
     font-size: 38px;
     line-height: 46px;
   }
-  .tagline-normal, .tagline-pink {
+  .tagline-normal,
+  .tagline-pink {
     font-size: 20px;
     line-height: 24px;
     margin: 0;
@@ -1703,16 +1708,25 @@ a {
   }
   .footer {
     height: 143px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .copyright {
     padding-bottom: 9px;
+  }
+  .subscribe-mail {
+    width: 250px;
   }
   .breadcrumb {
     -webkit-box-orient: vertical;
@@ -1767,7 +1781,7 @@ a {
     margin-top: 48px;
   }
   .check-box {
-    padding-bottom: 96px;
+    padding-right: 16px;
   }
   .product-ticket-cross {
     padding-left: 35px;
