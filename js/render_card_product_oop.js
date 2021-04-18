@@ -59,6 +59,13 @@ class ProductsList {
       //            block.innerHTML += productObj.render();
     }
   }
+  getSum() {
+    let sum = 0;
+    for (let product of this.goods) {
+      sum += product.price;
+    }
+    alert(sum);
+  }
 }
 
 class ProductItem {
@@ -89,3 +96,13 @@ class ProductItem {
 
 let list = new ProductsList();
 list.render();
+list.getSum();
+
+class BasketGoods {
+  addGoods() {}
+  removeGoods() {}
+}
+
+class BasketGoodsItem {
+  constructor() {}
+}
