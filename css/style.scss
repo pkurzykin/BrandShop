@@ -41,6 +41,19 @@ a {
   align-items: baseline;
   justify-content: space-between;
 }
+.btn-cart {
+  width: 35px;
+  height: 35px;
+  background: none;
+  background-image: url(/img/icon/shopping-cart-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .promo {
   height: 764px;
