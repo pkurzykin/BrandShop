@@ -2,10 +2,16 @@ class ProductsList {
   constructor(container = ".product-items") {
     this.container = container;
     this.goods = [];
-    this._fetchProducts();
+    this.allProducts = []; //массив объектов
+    this._getProducts().then((data) => {
+      //data - объект js
+      this.goods = [...data];
+      this.render();
+      this.getSum();
+    });
   }
 
-  _fetchProducts() {
+  /*  _fetchProducts() {
     this.goods = [
       {
         id: 1,
@@ -50,13 +56,23 @@ class ProductsList {
         price: 59,
       },
     ];
+  } */
+
+  _getProducts() {
+    return fetch(
+      `https://raw.githubusercontent.com/pkurzykin/JavaScript_base/main/catalog.json`
+    )
+      .then((result) => result.json())
+      .catch((error) => {
+        console.log(error);
+      });
   }
+
   render() {
     const block = document.querySelector(this.container);
     for (let product of this.goods) {
       const productObj = new ProductItem(product);
       block.insertAdjacentHTML("beforeend", productObj.render());
-      //            block.innerHTML += productObj.render();
     }
   }
   getSum() {
@@ -73,12 +89,12 @@ class ProductItem {
     this.title = product.title;
     this.price = product.price;
     this.desc = product.desc;
-    // this.id = product.id;
+    this.id = product.id;
     this.img = product.id;
   }
 
   render() {
-    return `<div class="product">
+    return `<div class="product" id="${this.id}">
     <img src="img/products/prod_${this.img}.jpg" alt="image">
     <div class="overlay">
         <button class="addtocart-overlay-btn"> 
@@ -95,8 +111,6 @@ class ProductItem {
 }
 
 let list = new ProductsList();
-list.render();
-list.getSum();
 
 class BasketGoods {
   addGoods() {}
