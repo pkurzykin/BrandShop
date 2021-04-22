@@ -7,7 +7,7 @@ class ProductsList {
       //data - объект js
       this.goods = [...data];
       this.render();
-      this.getSum();
+      // this.getSum();
     });
   }
 
@@ -110,13 +110,31 @@ class ProductItem {
   }
 }
 
-let list = new ProductsList();
-
 class BasketGoods {
+  constructor() {
+    this.addGoods();
+    this._initClickAddToCart();
+    this.invisible();
+  }
   addGoods() {}
+
   removeGoods() {}
+
+  invisible() {
+    document.querySelector(".btn-cart").addEventListener("click", () => {
+      document.querySelector(".cart-block").classList.toggle("invisible");
+    });
+  }
+  _initClickAddToCart() {
+    document.querySelector(".product-items").addEventListener("click", (e) => {
+      if (e.target.classList.contains("addtocart-overlay-btn")) {
+        alert("test");
+      }
+    });
+  }
 }
 
-class BasketGoodsItem {
-  constructor() {}
-}
+class BasketGoodsItem {}
+
+let list = new ProductsList();
+let basket = new BasketGoods();
