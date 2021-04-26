@@ -73,9 +73,10 @@
         <a href="registration.html"
           ><img src="img/icon/user.svg" alt="user"
         /></a>
-        <a href="cart.html"
-          ><img src="img/icon/shopping-cart.svg" alt="cart"
-        /></a>
+        <div class="cart">
+          <button class="btn-cart" type="button"></button>
+          <div class="cart-block invisible"></div>
+        </div>
       </section>
     </header>
 
@@ -119,7 +120,8 @@
       </h3>
 
       <section class="product-items center"></section>
-      <script src="js/render_card_product.js"></script>
+      <!-- <script src="js/render_card_product.js"></script> -->
+      <script src="js/render_card_product_oop.js"></script>
       <input class="browse-all" type="button" value="Browse All Product" />
     </main>
 
