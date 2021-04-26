@@ -128,7 +128,7 @@ class BasketGoods {
   _initClickAddToCart() {
     document.querySelector(".product-items").addEventListener("click", (e) => {
       if (e.target.classList.contains("addtocart-overlay-btn")) {
-        alert("test");
+        console.log(e.path[2].id);
       }
     });
   }
